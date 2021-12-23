@@ -1,6 +1,9 @@
 import React from 'react'
 
 export const Search = ({inputValue, onChangeInput, onClickSearch, isLoading}) => {
+
+
+  
   return (
     <form className="app-form">
       <input 

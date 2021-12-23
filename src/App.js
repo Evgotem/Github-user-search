@@ -10,10 +10,14 @@ function App() {
   const [userData, setUserData] = React.useState({})
   const [isLoading, setIsLoading] = React.useState(false)
 
+  React.useEffect(() => {
+    setUserData(null)
+  }, [])
+
   const onChangeInput = event => {
     setInputValue(event.target.value);
-  }
-
+  }  
+  
   const onClickSearch = async () => {
     if (inputValue !== '') {
       try {
@@ -29,12 +33,10 @@ function App() {
       alert('Введите Github аккаунт!')
     }
     setInputValue('');
-    console.log(userData);
-  }
 
-  React.useEffect(() => {
-    setUserData(null)
-  }, [])
+    const url = new URL(window.location.href);
+    url.searchParams.set('login', userData.login)
+  }
   
   return (
     <div id="app">
@@ -45,7 +47,7 @@ function App() {
           onClickSearch={onClickSearch}
           isLoading={isLoading}
         />
-        {userData && <UserInfo userData={userData} />}
+        {!!userData && <UserInfo userData={userData} />}
       </div>
     </div>
   );
