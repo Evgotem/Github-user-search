@@ -34,8 +34,6 @@ function App() {
     }
     setInputValue('');
 
-    const url = new URL(window.location.href);
-    url.searchParams.set('login', userData.login)
   }
   
   return (
