@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Github-user-search/static/css/main.8ab6e020.css",
+    "main.js": "/Github-user-search/static/js/main.77aa9f15.js",
+    "static/media/link.svg": "/Github-user-search/static/media/link.ae623597d4586c518c37.svg",
+    "static/media/location.svg": "/Github-user-search/static/media/location.4d918767ec313ca14ce0.svg",
+    "index.html": "/Github-user-search/index.html",
+    "static/media/search.svg": "/Github-user-search/static/media/search.0225d1f8727b9193e877.svg",
+    "main.8ab6e020.css.map": "/Github-user-search/static/css/main.8ab6e020.css.map",
+    "main.77aa9f15.js.map": "/Github-user-search/static/js/main.77aa9f15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ab6e020.css",
+    "static/js/main.77aa9f15.js"
+  ]
+}
